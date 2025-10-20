@@ -113,4 +113,34 @@ For other CRM entities, use `Bitrix24::crm()->service('entityName')`.
   - `Doniyor\Bitrix24\DTO\CRM\CurrencyFieldsDto`
 - Use `Doniyor\Bitrix24\DTO\GenericFieldsDto` for quick array-backed payloads.
 - Create your own DTO classes to add validation, defaults, or IDE type safety before making requests.
+
+## Response DTOs & Mappers
+
+- Services still return the raw Bitrix24 payload arrays so you can keep existing behaviour.
+- When you want typed objects, use the dedicated mappers:
+  - `Doniyor\Bitrix24\CRM\Mappers\LeadResponseMapper` → `Doniyor\Bitrix24\DTO\CRM\Response\LeadData`
+  - `Doniyor\Bitrix24\CRM\Mappers\DealResponseMapper` → `Doniyor\Bitrix24\DTO\CRM\Response\DealData`
+  - `Doniyor\Bitrix24\CRM\Mappers\ContactResponseMapper` → `Doniyor\Bitrix24\DTO\CRM\Response\ContactData`
+  - `Doniyor\Bitrix24\CRM\Mappers\CompanyResponseMapper` → `Doniyor\Bitrix24\DTO\CRM\Response\CompanyData`
+  - `Doniyor\Bitrix24\CRM\Mappers\ProductResponseMapper` → `Doniyor\Bitrix24\DTO\CRM\Response\ProductData`
+  - `Doniyor\Bitrix24\CRM\Mappers\ProductSectionResponseMapper` → `Doniyor\Bitrix24\DTO\CRM\Response\ProductSectionData`
+  - `Doniyor\Bitrix24\CRM\Mappers\QuoteResponseMapper` → `Doniyor\Bitrix24\DTO\CRM\Response\QuoteData`
+  - `Doniyor\Bitrix24\CRM\Mappers\InvoiceResponseMapper` → `Doniyor\Bitrix24\DTO\CRM\Response\InvoiceData`
+  - `Doniyor\Bitrix24\CRM\Mappers\ActivityResponseMapper` → `Doniyor\Bitrix24\DTO\CRM\Response\ActivityData`
+  - `Doniyor\Bitrix24\CRM\Mappers\RequisiteResponseMapper` → `Doniyor\Bitrix24\DTO\CRM\Response\RequisiteData`
+  - `Doniyor\Bitrix24\CRM\Mappers\DealCategoryResponseMapper` → `Doniyor\Bitrix24\DTO\CRM\Response\DealCategoryData`
+  - `Doniyor\Bitrix24\CRM\Mappers\StatusResponseMapper` → `Doniyor\Bitrix24\DTO\CRM\Response\StatusData`
+  - `Doniyor\Bitrix24\CRM\Mappers\StageResponseMapper` → `Doniyor\Bitrix24\DTO\CRM\Response\StageData`
+  - `Doniyor\Bitrix24\CRM\Mappers\CurrencyResponseMapper` → `Doniyor\Bitrix24\DTO\CRM\Response\CurrencyData`
+- Example usage:
+
+```php
+use Doniyor\Bitrix24\Facades\Bitrix24;
+use Doniyor\Bitrix24\CRM\Mappers\LeadResponseMapper;
+
+$payload = Bitrix24::crm()->leads()->get(42);
+$lead = app(LeadResponseMapper::class)->map($payload);
+
+echo $lead->title;
+```
 # Bitrix24RestApi
