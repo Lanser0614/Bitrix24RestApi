@@ -10,21 +10,21 @@
     },
     "autoload": {
         "psr-4": {
-            "Doniyor\\\\Bitrix24\\\\": "src/"
+            "Doniyor\\Bitrix24\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Doniyor\\\\Bitrix24\\\\Tests\\\\": "tests/"
+            "Doniyor\\Bitrix24\\Tests\\": "tests/"
         }
     },
     "extra": {
         "laravel": {
             "providers": [
-                "Doniyor\\\\Bitrix24\\\\BitrixRestApiServiceProvider"
+                "Doniyor\\Bitrix24\\BitrixRestApiServiceProvider"
             ],
             "aliases": {
-                "Bitrix24": "Doniyor\\\\Bitrix24\\\\Facades\\\\Bitrix24"
+                "Bitrix24": "Doniyor\\Bitrix24\\Facades\\Bitrix24"
             }
         }
     },
