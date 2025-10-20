@@ -21,7 +21,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Doniyor\\\\Bitrix24\\\\Bitrix24ServiceProvider"
+                "Doniyor\\\\Bitrix24\\\\BitrixRestApiServiceProvider"
             ],
             "aliases": {
                 "Bitrix24": "Doniyor\\\\Bitrix24\\\\Facades\\\\Bitrix24"

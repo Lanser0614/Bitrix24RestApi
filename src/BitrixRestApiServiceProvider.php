@@ -7,7 +7,7 @@ namespace Doniyor\Bitrix24;
 use Illuminate\Contracts\Container\Container;
 use Illuminate\Support\ServiceProvider;
 
-class Bitrix24ServiceProvider extends ServiceProvider
+class BitrixRestApiServiceProvider extends ServiceProvider
 {
     public function register(): void
     {
