@@ -2,11 +2,11 @@
 
 declare(strict_types=1);
 
-namespace Codex\Bitrix24;
+namespace Doniyor\Bitrix24;
 
-use Codex\Bitrix24\Exceptions\Bitrix24ApiException;
-use Codex\Bitrix24\Exceptions\Bitrix24Exception;
-use Codex\Bitrix24\Exceptions\Bitrix24RequestException;
+use Doniyor\Bitrix24\Exceptions\Bitrix24ApiException;
+use Doniyor\Bitrix24\Exceptions\Bitrix24Exception;
+use Doniyor\Bitrix24\Exceptions\Bitrix24RequestException;
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
 use GuzzleHttp\Exception\GuzzleException;

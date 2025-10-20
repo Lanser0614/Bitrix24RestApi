@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace Codex\Bitrix24\CRM;
+namespace Doniyor\Bitrix24\CRM;
 
-use Codex\Bitrix24\Bitrix24Client;
-use Codex\Bitrix24\DTO\FieldsDtoInterface;
+use Doniyor\Bitrix24\Bitrix24Client;
+use Doniyor\Bitrix24\DTO\FieldsDtoInterface;
 
 abstract class AbstractCrmService
 {

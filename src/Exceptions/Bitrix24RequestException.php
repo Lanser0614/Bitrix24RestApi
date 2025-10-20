@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Codex\Bitrix24\Exceptions;
+namespace Doniyor\Bitrix24\Exceptions;
 
 use Throwable;
 

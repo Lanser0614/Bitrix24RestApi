@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Codex\Bitrix24;
+namespace Doniyor\Bitrix24;
 
 use Illuminate\Contracts\Container\Container;
 use Illuminate\Support\ServiceProvider;

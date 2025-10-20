@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Codex\Bitrix24\CRM;
+namespace Doniyor\Bitrix24\CRM;
 
 class StageService extends AbstractCrmService
 {

@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Codex\Bitrix24\CRM;
+namespace Doniyor\Bitrix24\CRM;
 
-use Codex\Bitrix24\Bitrix24Client;
+use Doniyor\Bitrix24\Bitrix24Client;
 
 class CrmManager
 {

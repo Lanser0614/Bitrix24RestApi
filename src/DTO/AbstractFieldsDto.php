@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Codex\Bitrix24\DTO;
+namespace Doniyor\Bitrix24\DTO;
 
 abstract class AbstractFieldsDto implements FieldsDtoInterface
 {

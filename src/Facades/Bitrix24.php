@@ -2,14 +2,14 @@
 
 declare(strict_types=1);
 
-namespace Codex\Bitrix24\Facades;
+namespace Doniyor\Bitrix24\Facades;
 
-use Codex\Bitrix24\Bitrix24Manager;
+use Doniyor\Bitrix24\Bitrix24Manager;
 use Illuminate\Support\Facades\Facade;
 
 /**
- * @method static \Codex\Bitrix24\CRM\CrmManager crm()
- * @method static \Codex\Bitrix24\Bitrix24Client client()
+ * @method static \Doniyor\Bitrix24\CRM\CrmManager crm()
+ * @method static \Doniyor\Bitrix24\Bitrix24Client client()
  *
  * @see Bitrix24Manager
  */

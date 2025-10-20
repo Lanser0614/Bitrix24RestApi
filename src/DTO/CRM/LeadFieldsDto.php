@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Codex\Bitrix24\DTO\CRM;
+namespace Doniyor\Bitrix24\DTO\CRM;
 
-use Codex\Bitrix24\DTO\AbstractFieldsDto;
+use Doniyor\Bitrix24\DTO\AbstractFieldsDto;
 
 /**
  * Strongly typed fields DTO for CRM leads.

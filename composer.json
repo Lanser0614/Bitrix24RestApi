@@ -1,5 +1,5 @@
 {
-    "name": "codex/bitrix24-laravel",
+    "name": "doniyor/bitrix24-laravel",
     "description": "Laravel integration for the Bitrix24 REST API with CRM entity helpers.",
     "type": "library",
     "license": "MIT",
@@ -10,21 +10,21 @@
     },
     "autoload": {
         "psr-4": {
-            "Codex\\\\Bitrix24\\\\": "src/"
+            "Doniyor\\\\Bitrix24\\\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Codex\\\\Bitrix24\\\\Tests\\\\": "tests/"
+            "Doniyor\\\\Bitrix24\\\\Tests\\\\": "tests/"
         }
     },
     "extra": {
         "laravel": {
             "providers": [
-                "Codex\\\\Bitrix24\\\\Bitrix24ServiceProvider"
+                "Doniyor\\\\Bitrix24\\\\Bitrix24ServiceProvider"
             ],
             "aliases": {
-                "Bitrix24": "Codex\\\\Bitrix24\\\\Facades\\\\Bitrix24"
+                "Bitrix24": "Doniyor\\\\Bitrix24\\\\Facades\\\\Bitrix24"
             }
         }
     },

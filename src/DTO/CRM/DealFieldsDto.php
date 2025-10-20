@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Codex\Bitrix24\DTO\CRM;
+namespace Doniyor\Bitrix24\DTO\CRM;
 
-use Codex\Bitrix24\DTO\AbstractFieldsDto;
+use Doniyor\Bitrix24\DTO\AbstractFieldsDto;
 
 final class DealFieldsDto extends AbstractFieldsDto
 {
